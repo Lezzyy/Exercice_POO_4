@@ -10,15 +10,17 @@
 // requete ajax appelle la methode montrer
 
 var x = "";
+var tab = document.getElementById('tab');
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
     var liste = JSON.parse(this.responseText);
     for (i in liste) {
-      x += liste[i].name + " ";
-      x += liste[i].age + " ";
-      x += liste[i].city + " ";
+      x += "<tr><td>" + liste[i].name + "</td>";
+      x += "<td>" + liste[i].age + "</td> ";
+      x += "<td>" + liste[i].city + "</td></tr>";
     }
+    tab.innerHTML = x;
     console.log(x);
   }
 };
