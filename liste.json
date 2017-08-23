@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Dupont",
+    "age": "40",
+    "city": "Auckland"
+  },
+  {
+    "name": "Mclane",
+    "age": "35",
+    "city": "New-York"
+  },
+  {
+    "name": "Jim",
+    "age": "21",
+    "city": "Paris"
+  }
+]
